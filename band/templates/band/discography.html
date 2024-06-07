@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discography - Height Bros</title>
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+        <h1>Discography</h1>
+        <h3> Welcome {{ request.user }}</h3>
+        <ul>
+            <li><strong>Grace</strong> (2011)</li>
+            <li><strong>Heart of Love</strong> (2015)</li>
+            <li><strong>True Villain</strong> (2020)</li>
+        </ul>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to make an impact in the world in a positive way. We strive to connect with our audience through meaningful music and energetic performances.</p>
+        
+        <h2>Contacts</h2>
+        <p>For bookings, collaborations, or any inquiries, please contact us at Bennyfellow90@gmail.com</p>
+        
+        <nav>
+            <a href="{% url 'band:home' %}">Home</a>
+            <a href="{% url 'band:about' %}">About</a>
+            <a href="{% url 'band:discography' %}">Discography</a>
+        </nav>
+    {% else %}
+        <h1>You need to <a href="{% url 'user_auth:user_login' %}">log in</a> to view this page</h1>
+    {% endif %}
+</body>
+</html>
