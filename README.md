@@ -30,3 +30,6 @@ Open your web browser and go to http://127.0.0.1:8000/
 Navigate through the home, about, and events page 
 Sign up for new account or login with an existing account to access additional features 
 
+# Credit 
+Rukky Asaboro
+https://github.com/Rukky90
