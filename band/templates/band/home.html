@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - Height bros</title>
+    </head>
+
+    <body>
+        <h1>Welcome to the Height bros website</h1>
+        <p>This is the homepage</p>
+        <nav>
+            <a href="{% url 'band:home' %}">Home</a>
+            <a href="{% url 'band:about' %}">About</a>
+            <a href="{% url 'band:discography' %}">Discorgraphy</a>
+              {% if not user.is_authenticated %}
+            <a href="{% url 'user_auth:user_login' %}">Login</a>
+            <a href="{% url 'user_auth:signup' %}">Register</a>
+              {% endif %}
+        </nav>
+        </body>
+    </head>
+</html>
