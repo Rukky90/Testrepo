@@ -1,9 +1,13 @@
 import os 
 import sys
+<<<<<<< HEAD
 import django
 sys.path.insert(0, os.path.abspath('..'))
 os.environ['DJANGO_SETTINGS_MODULE'] = 'Your_project_name.settings'
 django.setup()
+=======
+sys.path.insert(0, os.path.abspath('..'))
+>>>>>>> origin/main
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
