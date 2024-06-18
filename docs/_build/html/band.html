@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>band package &mdash; band_website 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=29a6c3e3"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            band_website
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">band package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-band.admin">band.admin module</a></li>
+<li><a class="reference internal" href="#module-band.apps">band.apps module</a><ul>
+<li><a class="reference internal" href="#band.apps.BandConfig"><code class="docutils literal notranslate"><span class="pre">BandConfig</span></code></a><ul>
+<li><a class="reference internal" href="#band.apps.BandConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">BandConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#band.apps.BandConfig.name"><code class="docutils literal notranslate"><span class="pre">BandConfig.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-band.models">band.models module</a><ul>
+<li><a class="reference internal" href="#band.models.Album"><code class="docutils literal notranslate"><span class="pre">Album</span></code></a><ul>
+<li><a class="reference internal" href="#band.models.Album.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Album.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Album.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.description"><code class="docutils literal notranslate"><span class="pre">Album.description</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.get_next_by_release_date"><code class="docutils literal notranslate"><span class="pre">Album.get_next_by_release_date()</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.get_previous_by_release_date"><code class="docutils literal notranslate"><span class="pre">Album.get_previous_by_release_date()</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.id"><code class="docutils literal notranslate"><span class="pre">Album.id</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.objects"><code class="docutils literal notranslate"><span class="pre">Album.objects</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.release_date"><code class="docutils literal notranslate"><span class="pre">Album.release_date</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.signature"><code class="docutils literal notranslate"><span class="pre">Album.signature</span></code></a></li>
+<li><a class="reference internal" href="#band.models.Album.title"><code class="docutils literal notranslate"><span class="pre">Album.title</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-band.tests">band.tests module</a></li>
+<li><a class="reference internal" href="#module-band.urls">band.urls module</a><ul>
+<li><a class="reference internal" href="#band.urls.urlpatterns"><code class="docutils literal notranslate"><span class="pre">urlpatterns</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-band.views">band.views module</a><ul>
+<li><a class="reference internal" href="#band.views.about"><code class="docutils literal notranslate"><span class="pre">about()</span></code></a></li>
+<li><a class="reference internal" href="#band.views.discography"><code class="docutils literal notranslate"><span class="pre">discography()</span></code></a></li>
+<li><a class="reference internal" href="#band.views.home"><code class="docutils literal notranslate"><span class="pre">home()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-band">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">band_website</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">band package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/band.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="band-package">
+<h1>band package<a class="headerlink" href="#band-package" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="band.migrations.html">band.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="band.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="band.migrations.html#module-band.migrations.0001_initial">band.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="band.migrations.html#band.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="band.migrations.html#band.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="band.migrations.html#band.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="band.migrations.html#band.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="band.migrations.html#module-band.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-band.admin">
+<span id="band-admin-module"></span><h2>band.admin module<a class="headerlink" href="#module-band.admin" title="Link to this heading"></a></h2>
+</section>
+<section id="module-band.apps">
+<span id="band-apps-module"></span><h2>band.apps module<a class="headerlink" href="#module-band.apps" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="band.apps.BandConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">band.apps.</span></span><span class="sig-name descname"><span class="pre">BandConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/band/apps.html#BandConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#band.apps.BandConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.apps.BandConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#band.apps.BandConfig.default_auto_field" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.apps.BandConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'band'</span></em><a class="headerlink" href="#band.apps.BandConfig.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-band.models">
+<span id="band-models-module"></span><h2>band.models module<a class="headerlink" href="#module-band.models" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="band.models.Album">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">band.models.</span></span><span class="sig-name descname"><span class="pre">Album</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">release_date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signature</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/band/models.html#Album"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#band.models.Album" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="band.models.Album.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#band.models.Album.DoesNotExist" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="band.models.Album.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#band.models.Album.MultipleObjectsReturned" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.models.Album.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#band.models.Album.description" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="band.models.Album.get_next_by_release_date">
+<span class="sig-name descname"><span class="pre">get_next_by_release_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateField:</span> <span class="pre">release_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#band.models.Album.get_next_by_release_date" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="band.models.Album.get_previous_by_release_date">
+<span class="sig-name descname"><span class="pre">get_previous_by_release_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateField:</span> <span class="pre">release_date&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#band.models.Album.get_previous_by_release_date" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.models.Album.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#band.models.Album.id" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.models.Album.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#band.models.Album.objects" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.models.Album.release_date">
+<span class="sig-name descname"><span class="pre">release_date</span></span><a class="headerlink" href="#band.models.Album.release_date" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.models.Album.signature">
+<span class="sig-name descname"><span class="pre">signature</span></span><a class="headerlink" href="#band.models.Album.signature" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="band.models.Album.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#band.models.Album.title" title="Link to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-band.tests">
+<span id="band-tests-module"></span><h2>band.tests module<a class="headerlink" href="#module-band.tests" title="Link to this heading"></a></h2>
+</section>
+<section id="module-band.urls">
+<span id="band-urls-module"></span><h2>band.urls module<a class="headerlink" href="#module-band.urls" title="Link to this heading"></a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="band.urls.urlpatterns">
+<span class="sig-prename descclassname"><span class="pre">band.urls.</span></span><span class="sig-name descname"><span class="pre">urlpatterns</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[&lt;URLPattern</span> <span class="pre">'home/'</span> <span class="pre">[name='home']&gt;,</span> <span class="pre">&lt;URLPattern</span> <span class="pre">'about/'</span> <span class="pre">[name='about']&gt;,</span> <span class="pre">&lt;URLPattern</span> <span class="pre">'discography/'</span> <span class="pre">[name='discography']&gt;]</span></em><a class="headerlink" href="#band.urls.urlpatterns" title="Link to this definition"></a></dt>
+<dd><p>URL configuration for the band app.</p>
+<p>The <cite>urlpatterns</cite> list routes URLs to views.</p>
+<dl class="simple">
+<dt>Routes:</dt><dd><ul class="simple">
+<li><p>‘home/’: Renders the home page.</p></li>
+<li><p>‘about/’: Renders the about page.</p></li>
+<li><p>‘discography/’: Renders the discography page with a list of albums.</p></li>
+</ul>
+</dd>
+<dt>Modules:</dt><dd><ul class="simple">
+<li><p>path: Function to define URL patterns.</p></li>
+<li><p>include: Function to include other URL configurations.</p></li>
+<li><p>views: Module containing view functions for the band app.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-band.views">
+<span id="band-views-module"></span><h2>band.views module<a class="headerlink" href="#module-band.views" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="band.views.about">
+<span class="sig-prename descclassname"><span class="pre">band.views.</span></span><span class="sig-name descname"><span class="pre">about</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/band/views.html#about"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#band.views.about" title="Link to this definition"></a></dt>
+<dd><p>Renders the about page</p>
+<p>:param request(HttpRquest):The HTTP request object
+:returns:</p>
+<blockquote>
+<div><p>HttpResponse: The rendered about page</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="band.views.discography">
+<span class="sig-prename descclassname"><span class="pre">band.views.</span></span><span class="sig-name descname"><span class="pre">discography</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/band/views.html#discography"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#band.views.discography" title="Link to this definition"></a></dt>
+<dd><p>Renders the discography page with a list of all albums.</p>
+<blockquote>
+<div><dl>
+<dt>:param</dt><dd><p>request(HttpRequest): The HTTP request object.mro</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>HttpResponse: The rendered discography page with a list of the albums.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="band.views.home">
+<span class="sig-prename descclassname"><span class="pre">band.views.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/band/views.html#home"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#band.views.home" title="Link to this definition"></a></dt>
+<dd><p>Renders the home page.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong><strong>(</strong><strong>HttpRequest</strong><strong>)</strong> – The Http request object</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>HttpResponse: rendered the home page.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-band">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-band" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Rukky.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
